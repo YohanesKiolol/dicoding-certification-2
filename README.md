@@ -30,4 +30,4 @@ git clone https://github.com/YohanesKiolol/dicoding-sertification-2.git
 
 ## Resources
 
-A list of links to resources used throughout this course is available on the [Resources](resources.md) page.
+A list of links to resources used throughout this course is available on the [Resources](resources.md) page
