@@ -27,7 +27,3 @@ git clone https://github.com/YohanesKiolol/dicoding-certification-2.git
 - Once the files are on your machine, open the dicoding-certification-2 folder in [Visual Studio Code](https://code.visualstudio.com/).
 
 - With the files open in Visual Studio Code, press the **Go Live** button at the bottom of the window to launch the files with [Live Server](https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer).
-
-## Resources
-
-A list of links to resources used throughout this course is available on the [Resources](resources.md) page
