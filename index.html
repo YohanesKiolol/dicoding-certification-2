@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BookShelf</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="assets/style.css" />
+  </head>
+  <body>
+    <header>
+      <div class="title-container">
+        <img src="assets/images/png_bookshelf.png" alt="bookshelf icon" />
+        <h1 class="logo-name">BookShelf.</h1>
+      </div>
+    </header>
+    <main>
+      <div class="content">
+        <div class="form-container">
+          <div class="box-container title-container">
+            <img
+              class="title-icon"
+              src="assets/images/png_book.png"
+              alt="book icon"
+            />
+            <h2 id="form-title">Add-Book.</h2>
+          </div>
+          <div class="box-container content-container">
+            <form class="book-form" id="book-form" action="#">
+              <div class="form-group">
+                <label for="title">Title</label>
+                <input
+                  type="text"
+                  id="title"
+                  name="title"
+                  minlength="8"
+                  required
+                />
+              </div>
+              <div class="form-group">
+                <label for="author">Author</label>
+                <input
+                  type="text"
+                  id="author"
+                  name="author"
+                  minlength="3"
+                  required
+                />
+              </div>
+              <div class="form-group">
+                <label for="year">Year</label>
+                <input
+                  type="number"
+                  id="year"
+                  name="year"
+                  min="1800"
+                  max="2022"
+                  required
+                />
+              </div>
+              <div class="btn-form-container">
+                <input
+                  type="submit"
+                  value="Save"
+                  name="Submit"
+                  class="btn-form"
+                  id="btn-submit"
+                />
+                <input
+                  style="display: none"
+                  type="submit"
+                  value="Cancel"
+                  name="Cancel"
+                  class="btn-form"
+                  id="btn-cancel"
+                />
+              </div>
+            </form>
+          </div>
+        </div>
+        <div class="collumn-container">
+          <div class="filter-container">
+            <form class="filter-form" id="filter-form" action="#">
+              <input
+                class="filter-box"
+                type="text"
+                placeholder="Search Books Title"
+                name="search"
+              />
+              <img
+                class="filter-logo"
+                src="assets/images/svg_search.svg"
+                alt="search icon"
+              />
+            </form>
+          </div>
+          <div class="row-container">
+            <div class="list-container">
+              <div class="box-container title-container">
+                <img
+                  class="title-icon"
+                  src="assets/images/png_unfinished.png"
+                  alt="unfinished icon"
+                />
+                <h2>Un-finished.</h2>
+              </div>
+              <div class="box-container content-container">
+                <table class="list-book">
+                  <thead>
+                    <tr class="table-header">
+                      <th>Title</th>
+                      <th>Author</th>
+                      <th>Year</th>
+                      <th>Action</th>
+                    </tr>
+                  </thead>
+                  <tbody id="unfinish-list"></tbody>
+                </table>
+              </div>
+            </div>
+            <div class="list-container">
+              <div class="box-container title-container">
+                <img
+                  class="title-icon"
+                  src="assets/images/png_finished.png"
+                  alt="finished icon"
+                />
+                <h2>Finished.</h2>
+              </div>
+              <div class="box-container content-container">
+                <table class="list-book">
+                  <thead>
+                    <tr class="table-header">
+                      <th>Title</th>
+                      <th>Author</th>
+                      <th>Year</th>
+                      <th>Action</th>
+                    </tr>
+                  </thead>
+                  <tbody id="finish-list"></tbody>
+                </table>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <script src="assets/bookshelf.js"></script>
+  </body>
+</html>

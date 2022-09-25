@@ -1,0 +1,279 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+
+h1 {
+    text-transform: lowercase;
+    letter-spacing: 10px;
+}
+
+h2 {
+    text-transform: lowercase;
+    letter-spacing: 5px;
+}
+
+hr {
+    margin-block: 15px;
+}
+
+ul {
+    list-style: none;
+}
+
+.icon {
+    cursor: pointer;
+    width: 30px;
+    border-radius: 50%;
+    transition-duration: 0.4s;
+}
+
+.icon:hover {
+    background-color: #cea2fd;
+    box-shadow: 0 0 0px 10px #cea2fd;
+}
+
+.title-icon {
+    width: 40px;
+}
+
+.title-icon:hover {
+    animation: shake 0.5s;
+}
+
+@keyframes shake {
+    25% {
+        transform: translate(1px, 1px) rotate(0deg);
+    }
+
+    50% {
+        transform: translate(-2px, 1px) rotate(-1deg);
+    }
+
+    75% {
+        transform: translate(2px, 2px) rotate(0deg);
+    }
+
+    100% {
+        transform: translate(1px, -2px) rotate(-1deg);
+    }
+}
+
+*::-webkit-scrollbar {
+    height: 12px;
+    width: 12px;
+}
+
+*::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    background-color: rgb(123, 123, 123, 0.6);
+}
+
+body {
+    background-color: #a4d4ff;
+}
+
+header {
+    padding-inline: 8%;
+    margin-block: 40px;
+}
+
+.content {
+    padding-inline: 8%;
+    margin-block: 40px;
+    justify-content: space-between;
+    display: flex;
+    gap: 30px;
+}
+
+.content-container {
+    margin-top: 15px;
+    overflow-x: auto;
+}
+
+.form-container {
+    width: 30%;
+}
+
+.book-form {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+
+.btn-form-container {
+    display: flex;
+    width: 100%;
+    justify-content: end;
+    gap: 10px;
+}
+
+.btn-form {
+    background-color: white;
+    border: 2px solid #7b7b7b;
+    border-radius: 25px;
+    padding-block: 8px;
+    width: min(100%, 100px);
+    font-weight: bold;
+    transition-duration: 0.4s;
+}
+
+.btn-form:hover {
+    background-color: #cea2fd;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 15px
+}
+
+.form-group label {
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.form-group input {
+    border: none;
+    outline: none;
+    border-bottom: 2px solid #7b7b7b;
+}
+
+.collumn-container {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    width: 100%;
+}
+
+.row-container,
+.title-container {
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+.title-container {
+    align-items: center;
+}
+
+.box-container {
+    padding: 20px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+    border-radius: 5px;
+    background-color: white;
+    border: 2px solid #7b7b7b;
+}
+
+.cell-container {
+    border-radius: 3px;
+    box-shadow: #7b7b7b 0 0 0 2px;
+}
+
+.cell-container td {
+    padding: 20px;
+    text-align: center;
+}
+
+.table-header th {
+    padding-inline: 20px;
+}
+
+.filter-form {
+    display: flex;
+    gap: 5px;
+    justify-content: space-between;
+    padding: 8px 15px;
+    border-radius: 20px;
+    align-items: center;
+    border: 2px solid #7b7b7b;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+    background-color: white;
+}
+
+.filter-box {
+    border: none;
+    outline: none;
+    width: 100%;
+}
+
+.filter-logo {
+    width: 25px;
+}
+
+.list-container {
+    flex-grow: 1;
+}
+
+.list-book {
+    width: 100%;
+    text-align: center;
+    border-spacing: 0 15px;
+}
+
+.list-book th {
+    text-transform: uppercase;
+}
+
+.list-book th:nth-child(1),
+td:nth-child(1) {
+    text-align: left;
+}
+
+.action-cell {
+    text-align: center;
+}
+
+.action-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+@media screen and (max-width:1500px) {
+
+    .content {
+        flex-direction: column;
+    }
+
+    .collumn-container,
+    .row-container {
+        width: 100%;
+        gap: 30px;
+    }
+
+    .filter-container,
+    .form-container {
+        width: 100%;
+    }
+
+    .action-container ul {
+        right: -43px;
+    }
+
+}
+
+@media screen and (max-width:700px) {
+
+    .row-container,
+    .title-container {
+        flex-wrap: nowrap;
+    }
+
+    .row-container {
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-width:450px) {
+
+    .logo-name {
+        display: none;
+    }
+
+    header .title-container {
+        place-content: center;
+    }
+}
