@@ -1,4 +1,4 @@
-# Simple Bookshelf Web
+# Bookshelf
 
 ## Tech Stack
 
